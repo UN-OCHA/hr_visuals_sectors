@@ -1,0 +1,11 @@
+name = Humanitarianresponse Visuals Sectors
+description = Rename clusters to Sectors in Visuals
+core = 7.x
+package = HR Sectors
+dependencies[] = humanitarianresponse_maps
+features[features_api][] = api:1
+features[features_override_items][] = field.node-map-field_clusters
+features[features_override_items][] = views_view.maps_view
+features[features_overrides][] = field.node-map-field_clusters.field_instance|label
+features[features_overrides][] = views_view.maps_view.display|default|display_options|fields|field_clusters|label
+features[features_overrides][] = views_view.maps_view.display|page_1|display_options|filters|field_clusters_tid|expose|label
